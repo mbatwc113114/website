@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBAT - Projects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-code"></i> MBAT 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="modeToggle" class="mode-toggle">
+                            <i id="modeIcon" class="fas fa-sun"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <div class="container">
+            <h1 class="gradient-text">Project Portfolio</h1>
+            <p class="lead">Detailed documentation of our innovative technology solutions</p>
+        </div>
+    </div>
+
+    <!-- Project Navigation -->
+    <div class="container">
+        <div class="project-tabs">
+            <ul class="nav nav-tabs" id="projectTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="swarm-tab" data-bs-toggle="tab" data-bs-target="#swarm" type="button" role="tab" aria-controls="swarm" aria-selected="true">Swarm Robotics</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="regenerative-tab" data-bs-toggle="tab" data-bs-target="#regenerative" type="button" role="tab" aria-controls="regenerative" aria-selected="false">Regenerative Braking</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="cobot-tab" data-bs-toggle="tab" data-bs-target="#cobot" type="button" role="tab" aria-controls="cobot" aria-selected="false">Collaborative Robots</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Project Details -->
+    <div class="project-detail">
+        <div class="container">
+            <div class="tab-content" id="projectTabsContent">
+                <!-- Swarm Robotics Project -->
+                <div class="tab-pane fade show active" id="projectswarm" role="tabpanel" aria-labelledby="swarm-tab">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h2>SWARM ROBOTICS</h2>
+                            <p class="mb-0">Multi-agent robotic systems that collaborate through distributed intelligence</p>
+                        </div>
+                        <div class="project-body">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="project-media">
+                                        <img src="swarm.png" alt="Swarm Robotics">
+                                    </div>
+                                    <h3>Project Overview</h3>
+                                    <p>Our swarm robotics project explores the potential of multiple simple robots working together to perform complex tasks through local interactions and emergent collective behavior. Drawing inspiration from natural swarms like ants and bees, we've developed scalable algorithms that enable robust, adaptive, and efficient coordination among dozens of autonomous units.</p>
+                                    
+                                    <div class="key-features">
+                                        <h4>Key Features</h4>
+                                        <div class="feature-item">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-network-wired"></i>
+                                            </div>
+                                            <div>
+                                                <h5>Decentralized Control</h5>
+                                                <p>The system operates without central control, with each robot making decisions based on local information and simple rules, resulting in resilient, scalable behavior.</p>
+                                            </div>
+                                        </div>
+                                        <div class="feature-item">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-project-diagram"></i>
+                                            </div>
+                                            <div>
+                                                <h5>Emergent Intelligence</h5>
+                                                <p>Complex group behaviors emerge from simple interactions between individual robots, enabling the swarm to adapt to changing conditions and solve problems collectively.</p>
+                                            </div>
+                                        </div>
+                                        <div class="feature-item">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-sync-alt"></i>
+                                            </div>
+                                            <div>
+                                                <h5>Self-healing Capabilities</h5>
+                                                <p>The swarm maintains functionality even when individual units fail, automatically reorganizing and reassigning tasks to available robots.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="project-gallery mt-5">
+                                        <h4>Project Gallery</h4>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="gallery-item">
+                                                    <img src="/api/placeholder/600/400" class="img-fluid" alt="Swarm Robot Units">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="gallery-item">
+                                                    <img src="/api/placeholder/600/400" class="img-fluid" alt="Swarm Formation Testing">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-5">
+                                        <h4>Development Timeline</h4>
+                                        <div class="timeline">
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">January 2024</div>
+                                                <h5>Project Initiation</h5>
+                                                <p>Initial research and algorithm development for basic swarm behavior modeling.</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">March 2024</div>
+                                                <h5>Prototype Development</h5>
+                                                <p>First generation of robot units designed and built, capable of basic movement and communication.</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">June 2024</div>
+                                                <h5>Algorithm Refinement</h5>
+                                                <p>Enhancement of coordination algorithms to support complex task allocation and formation control.</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">September 2024</div>
+                                                <h5>Field Testing</h5>
+                                                <p>Successful demonstration of 20+ robot swarm performing collaborative tasks in uncontrolled environments.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4">
+                                    <div class="tech-stack">
+                                        <h4>Technology Stack</h4>
+                                        <div>
+                                            <span class="tech-badge">Python</span>
+                                            <span class="tech-badge">ROS</span>
+                                            <span class="tech-badge">TensorFlow</span>
+                                            <span class="tech-badge">Arduino</span>
+                                            <span class="tech-badge">Raspberry Pi</span>
+                                            <span class="tech-badge">Computer Vision</span>
+                                            <span class="tech-badge">Distributed Systems</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-4">
+                                        <h4>Applications</h4>
+                                        <ul>
+                                            <li>Search and rescue operations</li>
+                                            <li>Environmental monitoring</li>
+                                            <li>Warehouse automation</li>
+                                            <li>Agricultural field management</li>
+                                            <li>Infrastructure inspection</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mt-4">
+                                        <h4>Team Members</h4>
+                                        <ul>
+                                            <li>Project Lead: [Name]</li>
+                                            <li>Robotics Engineer: [Name]</li>
+                                            <li>Algorithm Developer: [Name]</li>
+                                            <li>Hardware Specialist: [Name]</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="project-links">
+                                        <a href="#" class="project-link-btn">
+                                            <i class="fas fa-file-pdf"></i> Research Paper
+                                        </a>
+                                        <a href="#" class="project-link-btn">
+                                            <i class="fab fa-github"></i> Code Repository
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Regenerative Braking Project -->
+                <div class="tab-pane fade" id="projectregenerative" role="tabpanel" aria-labelledby="regenerative-tab">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h2>REGENERATIVE BRAKING</h2>
+                            <p class="mb-0">Energy recovery system that converts kinetic energy into electrical energy</p>
+                        </div>
+                        <div class="project-body">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="project-media">
+                                        <img src="regen.png" alt="Regenerative Braking System">
+                                    </div>
+                                    <h3>Project Overview</h3>
+                                    <p>Our regenerative braking project focuses on maximizing energy recovery in electric vehicles and other mobile platforms. By capturing energy typically lost during deceleration and converting it back into usable electricity, we've developed systems that significantly extend range and improve overall energy efficiency of electric mobility solutions.</p>
+                                    
+                                    <div class="key-features">
+                                        <h4>Key Features</h4>
+                                        <div class="feature-item">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-battery-full"></i>
+                                            </div>
+                                            <div>
+                                                <h5>High Efficiency Recovery</h5>
+                                                <p>Our system achieves up to 70% energy recovery during braking events, significantly outperforming conventional regenerative systems.</p>
+                                            </div>
+                                        </div>
+                                        <div class="feature-item">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-tachometer-alt"></i>
+                                            </div>
+                                            <div>
+                                                <h5>Adaptive Control Algorithm</h5>
+                                                <p>Intelligent software that adjusts recovery rates based on vehicle speed, battery state, and braking intensity for optimal performance and safety.</p>
+                                            </div>
+                                        </div>
+                                        <div class="feature-item">
+                                            <div class="feature-icon">
+                                                <i class="fas fa-plug"></i>
+                                            </div>
+                                            <div>
+                                                <h5>Universal Integration</h5>
+                                                <p>Modular design allows for easy integration with various electric vehicle platforms and battery systems with minimal modification.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="project-gallery mt-5">
+                                        <h4>Project Gallery</h4>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="gallery-item">
+                                                    <img src="/api/placeholder/600/400" class="img-fluid" alt="System Components">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="gallery-item">
+                                                    <img src="/api/placeholder/600/400" class="img-fluid" alt="Energy Recovery Graph">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-5">
+                                        <h4>Development Timeline</h4>
+                                        <div class="timeline">
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">February 2024</div>
+                                                <h5>Concept Development</h5>
+                                                <p>Initial system design and theoretical modeling of energy recovery potential.</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">April 2024</div>
+                                                <h5>Prototype Construction</h5>
+                                                <p>First working prototype integrated with test platform for performance validation.</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">July 2024</div>
+                                                <h5>Algorithm Optimization</h5>
+                                                <p>Refinement of control software to maximize efficiency across various operating conditions.</p>
+                                            </div>
+                                            <div class="timeline-item">
+                                                <div class="timeline-date">October 2024</div>
+                                                <h5>Field Testing</h5>
+                                                <p>Integration with commercial electric vehicle platform showing 25% range improvement.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4">
+                                    <div class="tech-stack">
+                                        <h4>Technology Stack</h4>
+                                        <div>
+                                            <span class="tech-badge">C++</span>
+                                            <span class="tech-badge">MATLAB</span>
+                                            <span class="tech-badge">CANbus</span>
+                                            <span class="tech-badge">PCB Design</span>
+                                            <span class="tech-badge">Embedded Systems</span>
+                                            <span class="tech-badge">Power Electronics</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-4">
+                                        <h4>Applications</h4>
+                                        <ul>
+                                            <li>Electric vehicles</li>
+                                            <li>Electric bicycles and scooters</li>
+                                            <li>Electric public transit</li>
+                                            <li>Industrial machinery</li>
+                                            <li>Renewable energy storage</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="mt-4">
+                                        <h4>Team Members</h4>
+                                        <ul>
+                                            <li>Project Lead: [Name]</li>
+                                            <li>Electrical Engineer: [Name]</li>
+                                            <li>Software Developer: [Name]</li>
+                                            <li>Energy Systems Specialist: [Name]</li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="project-links">
+                                        <a href="#" class="project-link-btn">
+                                            <i class="fas fa-chart-line"></i> Performance Data
+                                        </a>
+                                        <a href="#" class="project-link-btn">
+                                            <i class="fas fa-file-alt"></i> Technical Specs
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Collaborative Robots Project -->
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                      const tabButtons = document.querySelectorAll('.nav-link');  // All tab buttons
+                      const tabContents = document.querySelectorAll('.tab-pane'); // All project content panes
+                  
+                      tabButtons.forEach(button => {
+                        button.addEventListener('click', function (event) {
+                          event.preventDefault(); // Prevent default behavior
+                  
+                          // Try to get the target from data-bs-target, then fallback to href if needed
+                          let targetId = button.getAttribute('data-bs-target');
+                          if (targetId) {
+                            targetId = targetId.replace('#', ''); // Remove the hash (#)
+                          } else {
+                            targetId = button.getAttribute('href');
+                            if (targetId) {
+                              targetId = targetId.replace('#', '');
+                            }
+                          }
+                  
+                          if (!targetId) return; // Exit if no target found
+                  
+                          // Remove active and show classes from all buttons and content panes
+                          tabButtons.forEach(btn => btn.classList.remove('active'));
+                          tabContents.forEach(content => content.classList.remove('show', 'active'));
+                  
+                          // Activate the clicked button
+                          button.classList.add('active');
+                  
+                          // Since your content IDs have a "project" prefix (e.g., "projectswarm"),
+                          // we prepend "project" to the targetId.
+                          const fullTargetId = "project" + targetId;
+                          const targetPane = document.getElementById(fullTargetId);
+                  
+                          // If found, display the target content pane
+                          if (targetPane) {
+                            targetPane.classList.add('show', 'active');
+                          }
+                  
+                          console.log(`Tab clicked: ${fullTargetId}`);
+                        });
+                      });
+                    });
+                  </script>
+                  
+                  
+                  
+</body>
+</html>

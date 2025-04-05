@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
+    <title>MBAT - Innovation & Technology</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
@@ -31,7 +31,7 @@
                     </li>
                     <li class="nav-item">
                         <button id="modeToggle" class="mode-toggle">
-                            <i id="modeIcon" class="fas fa-moon"></i>
+                            <i id="modeIcon" class="fas fa-sun"></i>
                         </button>
                     </li>
                 </ul>
@@ -41,44 +41,100 @@
 
     <!-- Hero Section -->
     <div class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4">MBAT</h1>
-            <p class="lead">Showcasing Innovation, Creativity, and Technology</p>
-            <a href="#projects" class="btn btn-outline-info mt-3">View My Work</a>
+        <div class="container text-center hero-content">
+            <h1 class="animate-in"><span class="gradient-text">MBAT</span></h1>
+            <p class="lead animate-in delay-1">Multidisciplinary Builders of Automation & Technology</p>
+            <a href="#projects" class="btn btn-outline-custom animate-in delay-2">Explore Projects</a>
         </div>
     </div>
 
     <!-- Projects Section -->
     <div class="container py-5" id="projects">
-        <h2 class="text-center mb-5">Featured Projects</h2>
+        <h2 class="text-center mb-5 gradient-text">Featured Projects</h2>
         <div class="row">
             <div class="col-md-4 mb-4">
-                <div class="card project-card">
-                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" class="card-img-top" alt="Project 1">
+                <div class="project-card">
+                    <img src="swarm.png" class="card-img-top" alt="Swarm Robotics">
                     <div class="card-body">
                         <h5 class="card-title">SWARM ROBOTICS</h5>
-                        <p class="card-text text-secondary">Brief description of the project and its key technologies.</p>
-                        <a href="#" class="btn btn-outline-info">View Project</a>
+                        <p class="card-text">Multi-agent robotic systems that collaborate to accomplish complex tasks through distributed intelligence and coordination.</p>
+                        <a href="#" class="btn btn-outline-custom">View Project</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card project-card">
-                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="card-img-top" alt="Project 2">
+                <div class="project-card">
+                    <img src="regen.png" class="card-img-top" alt="Regenerative Braking">
                     <div class="card-body">
-                        <h5 class="card-title">Regenrative breaking</h5>
-                        <p class="card-text text-secondary">Brief description of the project and its key technologies.</p>
-                        <a href="#" class="btn btn-outline-info">View Project</a>
+                        <h5 class="card-title">REGENERATIVE BRAKING</h5>
+                        <p class="card-text">Energy recovery system that converts kinetic energy into electrical energy during deceleration, improving efficiency in electric vehicles.</p>
+                        <a href="#" class="btn btn-outline-custom">View Project</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card project-card">
-                    <img src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" class="card-img-top" alt="Project 3">
+                <div class="project-card">
+                    <img src="robot.png" class="card-img-top" alt="Collaborative Robot">
                     <div class="card-body">
-                        <h5 class="card-title">Cobot</h5>
-                        <p class="card-text text-secondary">Brief description of the project and its key technologies.</p>
-                        <a href="#" class="btn btn-outline-info">View Project</a>
+                        <h5 class="card-title">COLLABORATIVE ROBOTS</h5>
+                        <p class="card-text">Human-robot interaction systems designed to work safely alongside humans, enhancing productivity in manufacturing and assembly processes.</p>
+                        <a href="#" class="btn btn-outline-custom">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section" id="about">
+        <div class="container about-content">
+            <h2 class="text-center mb-5 gradient-text">About MBAT</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="highlight-box">
+                        <i class="fas fa-robot highlight-icon"></i>
+                        <h3>Our Vision</h3>
+                        <p>Pioneering technological solutions that bridge the gap between robotics, sustainable energy, and human-centered design. We aim to create innovations that make a significant impact on industry and society.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="highlight-box">
+                        <i class="fas fa-lightbulb highlight-icon"></i>
+                        <h3>Our Approach</h3>
+                        <p>We combine cutting-edge research with practical applications, focusing on sustainable solutions that optimize efficiency, reduce environmental impact, and enhance human capabilities through technology.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="highlight-box">
+                        <i class="fas fa-cog highlight-icon"></i>
+                        <h3>Our Expertise</h3>
+                        <p>Our team specializes in robotics systems, energy recovery technologies, machine learning applications, and human-machine interfaces. We bring together diverse skills to tackle complex engineering challenges across multiple domains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact-section" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5 gradient-text">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Subject">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -88,19 +144,57 @@
     <!-- Footer -->
     <footer class="footer text-center py-4">
         <div class="container">
-            <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+            <p>&copy; 2025 MBAT. All Rights Reserved.</p>
             <div class="social-links">
-                <a href="#" class="text-secondary mx-2"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-secondary mx-2"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="text-secondary mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-github"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+    <script>
+        // Add smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Dark/Light mode toggle (currently just toggles icon)
+        const modeToggle = document.getElementById('modeToggle');
+        const modeIcon = document.getElementById('modeIcon');
+        
+        modeToggle.addEventListener('click', () => {
+            if (modeIcon.classList.contains('fa-sun')) {
+                modeIcon.classList.remove('fa-sun');
+                modeIcon.classList.add('fa-moon');
+            } else {
+                modeIcon.classList.remove('fa-moon');
+                modeIcon.classList.add('fa-sun');
+            }
+        });
+        
+        // Animation for elements when they come into view
+        const observerOptions = {
+            threshold: 0.25
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.project-card, .highlight-box').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
-
-
-
